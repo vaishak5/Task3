@@ -44,7 +44,7 @@ body {
 	color:#636B74;
 	font-size:13px;
 	font-family:-apple-system, -apple-system,  BlinkMacSystemFont, 'Segoe UI', Roboto,  
-			Oxygen, Ubuntu, Cantarell, 'Open Sans','Helvetica Neue', sans-serif;;
+			Oxygen, Ubuntu, Cantarell, 'Open Sans','Helvetica Neue', sans-serif;
 	margin-top:4px;
 	cursor:pointer;
 	/*justify-content:space-between;
@@ -155,19 +155,358 @@ body {
 .signup:hover{
 	background-color:hsl(210,80%,23%);
 }
+.headerMain{
+	display:flex;
+}
 .headerLeftIcons{
 	display:flex;
 	flex-direction:column;
+	border-right:2px solid #ddd;
+	height:600px;
+	width:190px;
 }
 .headerLeft{
 	display:flex;
+	flex-direction:column;
 	
 }
 .headerLeftFirst{
 	display:flex;
-	flex-direction:row;
+	flex-direction:column;
+	margin-top:5px;
+	margin-left:39px;
+	font-size:13px;
 }
 .homeSection{
 	display:flex;
-	flex-direction:row;
+	align-items:center;
+	justify-content:flex-start;
+	gap:7px;
+	cursor:pointer;
 }
+.homeSection svg{
+	fill:hsl(210,8%,25%);
+}
+.homeTxt{
+	color:hsl(210,8%,25%);
+}
+.homeSection svg:hover{
+	fill:hsl(210,8%,5%);
+}
+.homeTxt:hover{
+	color:hsl(210,8%,5%);
+}
+.questionSection{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:7px;
+	cursor:pointer;
+}
+.questionSection svg{
+	fill:hsl(210,8%,25%);
+}
+.questionTxt{
+	color:hsl(210,8%,25%);
+}
+.questionTxt:hover{
+	color:hsl(210,8%,5%);
+}
+.questionSection svg:hover{
+	fill:hsl(210,8%,5%);
+}
+.tagsSection{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:7px;
+	cursor:pointer;
+}
+.tagsSection svg{
+	fill:hsl(210,8%,25%);
+}
+.tagsTxt{
+	color:hsl(210,8%,25%);
+}
+.tagsSection svg:hover{
+	fill:hsl(210,8%,5%);
+}
+.tagsTxt:hover{
+	color:hsl(210,8%,5%);
+}
+.headerLeftSecond{
+	display:flex;
+	flex-direction:column;
+	margin-left:35px;
+	font-size:13px;
+	margin-top:17px;
+	
+}
+.usersSection{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:flex-start;
+	gap:7px;
+	width:89%;
+	height:25px;
+	bordr-radius:5px;
+	background-color:hsl(0,0%,95%);
+	padding:5px;
+	outline:none;
+	border-style:none;
+	cursor:pointer;
+	
+}
+.companiesSection{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:flex-start;
+	gap:7px;
+	margin-left:4px;
+	cursor:pointer;
+}
+.companiesSection svg{
+	fill:hsl(210,8%,25%);
+}
+.companiesTxt{
+	color:hsl(210,8%,25%);
+}
+.companiesSection svg:hover{
+	fill:hsl(210,8%,5%);
+}
+.companiesTxt:hover{
+	color:hsl(210,8%,5%);
+}
+.headerLeftThird{
+	display:flex;
+	flex-direction:column;
+	margin-left:35px;
+	font-size:13px;
+	margin-top:10px;
+}
+.labsSection{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:flex-start;
+	gap:79px;
+	margin-left:4px;
+	cursor:pointer;
+}
+.labsSection svg{
+	fill:hsl(210,8%,25%);
+}
+.labsTxt{
+	font-weight:500;
+}
+.labsSection svg:hover{
+	fill:hsl(210,8%,5%);
+}
+.discussionsSection{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:flex-start;
+	gap:7px;
+	margin-left:4px;
+	cursor:pointer;
+}
+.discussionsSection svg{
+	fill:hsl(210,8%,25%);
+}
+.discussionsTxt{
+	color:#3b4045;
+}
+.discussionsTxt:hover{
+	color:hsl(210,8%,5%);
+}
+.headerLeftFourth{
+	display:flex;
+	flex-direction:column;
+	margin-left:35px;
+	font-size:13px;
+	margin-top:10px;
+}
+.collectivesSection{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:flex-start;
+	gap:35px;
+	margin-left:4px;
+	cursor:pointer;
+}
+.collectivesSection svg{
+	fill:hsl(210,8%,25%);
+}
+.collectivesTxt{
+	font-weight:500;
+}
+.collectivesSection svg:hover{
+	fill:hsl(210,8%,5%);
+}
+.exploreSection{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:flex-start;
+	gap:7px;
+	margin-left:4px;
+	cursor:pointer;
+}
+.exploreSection svg{
+	fill:hsl(27,90%,55%)
+}
+.exploreTxt{
+	color:#3b4045;
+}
+.exploreTxt:hover{
+	color:hsl(210,8%,5%);
+}
+.headerLeftFifth{
+	display:flex;
+	flex-direction:column;
+	margin-left:35px;
+	font-size:13px;
+	margin-top:10px;
+}
+.teamsTxt{
+	font-weight:500;
+}
+.headermainSection{
+	display:flex;
+	flex-direction:column;
+}
+.userImage img{
+	margin-left:43px;
+	margin-top:15px;
+	cursor:pointer;
+}
+.userInformation{
+	display:flex;
+}
+.userName{
+	font-size:34px;
+	margin-left:5px;
+	width:200px;
+	height:76px;
+}
+.userDetails{
+	display:flex;
+	flex-direction:column;
+}
+.userDate{
+	display:flex;
+	font-size:13px;
+	color:hsl(210,8%,42%);
+}
+.userDate svg{
+	fill:hsl(210,8%,42%);
+	cursor:default;
+}
+.userYear{
+	display:flex;
+	align-items:center;
+	gap:5px;
+	
+}
+.lastSeen{
+	display:flex;
+	align-items:center;
+	gap:6px;
+	padding-left:6px;
+}
+.lastSeen svg{
+	gap:3px;
+	cursor:default;
+}
+.icons{
+	display:flex;
+	font-size:13px;
+	gap:12px;
+	color:hsl(210,8%,42%);
+	height:15px;
+}
+.userIcons{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	gap:5px;
+	
+}
+.location{
+	display:flex;
+	align-items:center;
+	gap:5px;
+}
+.icons svg{
+	fill:hsl(210,8%,42%);
+}
+.twitter svg{
+	cursor:pointer;
+}
+.github svg{
+	cursor:pointer;
+}
+.csharpTxt{
+	cursor:pointer;
+}
+.profilebtn{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	margin-left:468px;
+	margin-top:18px;
+	border:1px solid #ddd;
+	height:30px;
+	padding-left:10px;
+	border-radius:5px;
+	padding-bottom:3px;
+	font-size:13px;
+	cursor:pointer;
+	background-color:hsl(210,8%,98%);
+}
+.profilebtn svg{
+	font-size:21px;
+}
+.headerSecond{
+	display:flex;
+	font-size:13px;
+	gap:19px;
+}
+.profilesBtn{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:13px;
+	padding:5px 10px;
+	height:21px;
+	border-radius:21px;
+	color:#ffffff;
+	margin-left:18px;
+	margin-top:10px;
+	background-color:hsl(27,90%,55%);
+	cursor:pointer;
+}
+.profilesBtn:hover{
+	background-color:hsl(27,87%,41%);
+}
+.activityBtn{
+	align-items:center;
+	font-size:13px;
+	
+	/*height:21px;*/
+	cursor:pointer;
+	padding-left:13px;
+	
+	padding-right:12px;
+}
+.activityBtn:hover{
+	border-radius:21px;
+	background-color:hsl(0,0%,84%);
+}
+	
+
+	

@@ -1,49 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>StackOverflow</title>
-		<link rel="stylesheet" href="./Style/style.css">
-		<link rel="stylesheet" href="./Style/icon.css">
-	</head>
-	<body>
-		<div class="mainSection">
-			<div class="header">
-				<div class="stackLogo">
-					<img class="logo" src="./Assets/logoo.png" alt="logo">
+   <head>
+      <title>StackOverflow</title>
+      <link rel="stylesheet" href="./Style/style.css">
+      <link rel="stylesheet" href="./Style/icon.css">
+   </head>
+   <body>
+      <div class="mainSection">
+         <div class="header">
+            <div class="stackLogo">
+               <img class="logo" src="./Assets/logoo.png" alt="logo">
+            </div>
+            <div class="headerTopics">
+               <p class="topicsFirst">About</p>
+               <p class="topicsSecond">Products</p>
+               <p class="topicsThird">For Teams</p>
+            </div>
+            <div class="searchBox">
+               <form class="userBox">
+                  <span class="material-symbols-outlined searchIcon">search</span>
+                  <input type="text" value="user:22656">
+               </form>
+            </div>
+            <div class="headerEnd">
+               <div class="login">
+                  <p class="loginBtn">Log in </p>
+               </div>
+               <div class="signup">
+                  <p class="signupBtn"> Sign up </p>
+               </div>
+            </div>
+         </div>
+         <div class="headerMain">
+            <div class="headerLeftIcons">
+               <div class="headerLeft">
+                  <div class="headerLeftFirst">
+                     <div class="homeSection">
+                        <svg aria-hidden="true" class="svg-icon iconHome" width="18" height="18" viewBox="0 0 18 18">
+                           <path d="M15 10v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5H0l9-9 9 9h-3Zm-8 1v6h4v-6H7Z">
+                           </path>
+                        </svg>
+                        <p class="homeTxt">Home</p>
+                     </div>
+                     <div class="questionSection">
+                        <svg aria-hidden="true" class="svg-icon iconQuestion" width="18" height="18" viewBox="0 0 18 18">
+                           <path d="m4 15-3 3V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v9c0 1.09-.91 2-2 2H4Zm7.75-3.97c.72-.83.98-1.86.98-2.94 0-1.65-.7-3.22-2.3-3.83a4.41 4.41 0 0 0-3.02 0 3.8 3.8 0 0 0-2.32 3.83c0 1.29.35 2.29 1.03 3a3.8 3.8 0 0 0 2.85 1.07c.62 0 1.2-.11 1.71-.34.65.44 1 .68 1.06.7.23.13.46.23.7.3l.59-1.13a5.2 5.2 0 0 1-1.28-.66Zm-1.27-.9a5.4 5.4 0 0 0-1.5-.8l-.45.9c.33.12.66.29.98.5-.2.07-.42.11-.65.11-.61 0-1.12-.23-1.52-.68-.86-1-.86-3.12 0-4.11.8-.9 2.35-.9 3.15 0 .9 1.01.86 3.03-.01 4.08Z"></path>
+                        </svg>
+                        <p class="questionTxt">Questions</p>
+                     </div>
+                     <div class="tagsSection">
+                        <svg aria-hidden="true" class="svg-icon iconTags" width="18" height="18" viewBox="0 0 18 18">
+                           <path d="M9.24 1a3 3 0 0 0-2.12.88l-5.7 5.7a2 2 0 0 0-.38 2.31 3 3 0 0 1 .67-1.01l6-6A3 3 0 0 1 9.83 2H14a3 3 0 0 1 .79.1A2 2 0 0 0 13 1H9.24Z" opacity=".4"></path>
+                           <path d="M9.83 3a2 2 0 0 0-1.42.59l-6 6a2 2 0 0 0 0 2.82L6.6 16.6a2 2 0 0 0 2.82 0l6-6A2 2 0 0 0 16 9.17V5a2 2 0 0 0-2-2H9.83ZM12 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"></path>
+                        </svg>
+                        <p class="tagsTxt">Tags</p>
+                     </div>
+                  </div>
+                  <div class="headerLeftSecond">
+                     <div class="usersSection">
+                        <svg aria-hidden="true" class="svg-icon iconPeople" width="18" height="18" viewBox="0 0 18 18">
+                           <path d="M17 14c0 .44-.45 1-1 1H9a1 1 0 0 1-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3 .06-2.42 1.37-3 2.5-3s2.44.58 2.5 3c.06 2.41-.16 2.38-1 3-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3 .06-2.41 1.37-3 2.5-3s2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4Z"></path>
+                        </svg>
+                        <p class="usersTxt"><b>Users</b></p>
+                     </div>
+                     <div class="companiesSection">
+                        <svg aria-hidden="true" class="svg-icon iconBriefcase" width="18" height="18" viewBox="0 0 18 18">
+                           <path d="M5 4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h1V4Zm7 0H6v1h6V4Z"></path>
+                        </svg>
+                        <p class="companiesTxt">Companies</p>
+                     </div>
+                  </div>
+                  <div class="headerLeftThird">
+                     <div class="labsSection">
+                        <p class="labsTxt">LABS</p>
+                        <svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14">
+                           <path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"></path>
+                        </svg>
+                     </div>
+                     <div class="discussionsSection">
+                        <svg aria-hidden="true" class="fc-black-400 w16 svg-icon iconSpeechBubble" width="18" height="18" viewBox="0 0 18 18">
+                           <path d="m4 15-3 3V4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4Z"></path>
+                        </svg>
+                        <p class="discussionsTxt">Discussions</p>
+                     </div>
+                  </div>
+                  <div class="headerLeftFourth">
+                     <div class="collectivesSection">
+                        <p class="collectivesTxt">COLLECTIVES</p>
+                        <svg aria-hidden="true" class="svg-icon iconPlusSm" width="14" height="14" viewBox="0 0 14 14">
+                           <path d="M8 2H6v4H2v2h4v4h2V8h4V6H8V2Z"></path>
+                        </svg>
+                     </div>
+                     <div class="exploreSection">
+                        <svg aria-hidden="true" class="mt-auto fc-orange-400 svg-icon iconStarVerified" width="18" height="18" viewBox="0 0 18 18">
+                           <path d="M9.86.89a1.14 1.14 0 0 0-1.72 0l-.5.58c-.3.35-.79.48-1.23.33l-.72-.25a1.14 1.14 0 0 0-1.49.85l-.14.76c-.1.45-.45.8-.9.9l-.76.14c-.67.14-1.08.83-.85 1.49l.25.72c.15.44.02.92-.33 1.23l-.58.5a1.14 1.14 0 0 0 0 1.72l.58.5c.35.3.48.79.33 1.23l-.25.72c-.23.66.18 1.35.85 1.49l.76.14c.45.1.8.45.9.9l.14.76c.14.67.83 1.08 1.49.85l.72-.25c.44-.15.92-.02 1.23.33l.5.58c.46.52 1.26.52 1.72 0l.5-.58c.3-.35.79-.48 1.23-.33l.72.25c.66.23 1.35-.18 1.49-.85l.14-.76c.1-.45.45-.8.9-.9l.76-.14c.67-.14 1.08-.83.85-1.49l-.25-.72c-.15-.44-.02-.92.33-1.23l.58-.5c.52-.46.52-1.26 0-1.72l-.58-.5c-.35-.3-.48-.79-.33-1.23l.25-.72a1.14 1.14 0 0 0-.85-1.49l-.76-.14c-.45-.1-.8-.45-.9-.9l-.14-.76a1.14 1.14 0 0 0-1.49-.85l-.72.25c-.44.15-.92.02-1.23-.33l-.5-.58Zm-.49 2.67L10.6 6.6c.05.15.19.24.34.25l3.26.22c.36.03.5.48.23.71l-2.5 2.1a.4.4 0 0 0-.14.4l.8 3.16a.4.4 0 0 1-.6.44L9.2 12.13a.4.4 0 0 0-.42 0l-2.77 							1.74a.4.4 0 0 1-.6-.44l.8-3.16a.4.4 0 0 0-.13-.4l-2.5-2.1a.4.4 0 0 1 .22-.7l3.26-.23a.4.4 0 0 0 .34-.25l1.22-3.03a.4.4 0 0 1 .74 0Z"></path>
+                        </svg>
+                        <p class="exploreTxt">Explore Collectives</p>
+                     </div>
+                  </div>
+                  <div class="headerLeftFifth">
+                     <div class="teamsSection">
+                        <p class="teamsTxt">TEAMS</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+		<!--User Body-->
+		<div class="headermainSection">
+			<div class="userInformation">
+				<div class="userImage">
+					<img class="userImg" src="./Assets/userImg.png" alt="image">
 				</div>
-				<div class="headerTopics">
-					<p class="topicsFirst">About</p>
-					<p class="topicsSecond">Products</p>
-					<p class="topicsThird">For Teams</p>
-				</div>
-				<div class="searchBox">
-					<form class="userBox">
-						<span class="material-symbols-outlined searchIcon">search</span>
-						<input type="text" value="user:22656">
-					</form>
-				</div>
-				<div class="headerEnd">
-					<div class="login">
-						<p class="loginBtn">Log in </p>
+				<div class="userDetails">
+					<div class="userName">
+						<p>Jon Skeet</p>
 					</div>
-					<div class="signup">
-						<p class="signupBtn"> Sign up </p>
+					<div class="userDate">
+						<div class="userYear">
+							<svg aria-hidden="true" class="svg-icon iconCake" width="18" height="18" viewBox="0 0 18 18"><path d="M9 4.5a1.5 1.5 0 0 0 1.28-2.27L9 0 7.72 2.23c-.14.22-.22.48-.22.77 0 .83.68 1.5 1.5 1.5Zm3.45 7.5-.8-.81-.81.8c-.98.98-2.69.98-3.67 0l-.8-.8-.82.8c-.49.49-1.14.76-1.83.76-.55 0-1.3-.17-1.72-.46V15c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2v-2.7c-.42.28-1.17.45-1.72.45-.69 0-1.34-.27-1.83-.76Zm1.3-5H10V5H8v2H4.25C3 7 2 8 2 9.25v.9c0 .81.91 1.47 1.72 1.47.39 0 .77-.14 1.03-.42l1.61-1.6 1.6 1.6a1.5 1.5 0 0 0 2.08 0l1.6-1.6 1.6 1.6c.28.28.64.43 1.03.43.81 0 1.73-.67 1.73-1.48v-.9C16 8.01 15 7 13.75 7Z"></path></svg>
+							<p class="memberDetails">Member for 15 years, 5 months</p>
+						</div>
+						<div class="lastSeen">
+							<svg aria-hidden="true" class="svg-icon iconClock" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17c-4.36 0-8-3.64-8-8 0-4.36 3.64-8 8-8 4.36 0 8 3.64 8 8 0 4.36-3.64 8-8 8Zm0-2c3.27 0 6-2.73 6-6s-2.73-6-6-6-6 2.73-6 6 2.73 6 6 6ZM8 5h1.01L9 9.36l3.22 2.1-.6.93L8 10V5Z"></path></svg>
+							<p class="seenDetails">Last seen this week</p>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="headerLeftIcons">
-				<div class="headerLeft">
-					<div class="headerLeftFirst">
-						<div class="homeSection">
-							<svg aria-hidden="true" class="svg-icon iconHome" width="18" height="18" viewBox="0 0 18 18">
-							<path d="M15 10v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5H0l9-9 9 9h-3Zm-8 1v6h4v-6H7Z">
-							</path>
-							</svg>
-							<p class="homeTxt">Home</p>
+					<div class="icons">
+						<div class="userIcons">
+							<div class="twitter">
+							<svg aria-hidden="true" class="fc-black-350 svg-icon iconTwitter" width="18" height="18" viewBox="0 0 18 18"><path fill="#2AA3EF" d="M17 4.04c-.59.26-1.22.44-1.88.52a3.3 3.3 0 0 0 1.44-1.82c-.64.37-1.34.64-2.09.79a3.28 3.28 0 0 0-5.6 2.99A9.3 9.3 0 0 1 2.12 3.1a3.28 3.28 0 0 0 1.02 4.38 3.28 3.28 0 0 1-1.49-.4v.03a3.29 3.29 0 0 0 2.64 3.22 3.34 3.34 0 0 1-1.48.06 3.29 3.29 0 0 0 3.07 2.28 6.58 6.58 0 0 1-4.85 1.36 9.33 9.33 0 0 0 5.04 1.47c6.04 0 9.34-5 9.34-9.33v-.42a6.63 6.63 0 0 0 1.63-1.7L17 4.04Z"></path></svg>
+							</div>
+							<div class="github">
+							<svg aria-hidden="true" class="fc-black-350 svg-icon iconGitHub" width="18" height="18" viewBox="0 0 18 18"><path fill="#010101" d="M9 1a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 9 1Z"></path></svg>
+							</div>
+							
+							<svg aria-hidden="true" class="svg-icon iconLink" width="18" height="18" viewBox="0 0 18 18"><path d="M7.22 11.83a6 6 0 0 0 1.62.85l.61-1.8a4.1 4.1 0 1 1 4.04-.8l1.26 1.42a6 6 0 1 0-7.53.33Zm3.43-5.6a6 6 0 0 0-1.6-.87L8.4 7.15a4.1 4.1 0 1 1-4.05.73L3.12 6.43a6 6 0 1 0 7.53-.2Z"></path></svg>
+							<p class="csharpTxt">csharpindepth.com</p> 
+							
+						</div>
+						<div class="location">
+							<svg aria-hidden="true" class="mrn2 svg-icon iconLocation" width="17" height="18" viewBox="0 0 17 18"><path d="M2 6.38C2 9.91 8.1 17.7 8.1 17.7c.22.29.58.29.8 0 0 0 6.1-7.8 6.1-11.32A6.44 6.44 0 0 0 8.5 0 6.44 6.44 0 0 0 2 6.38Zm9.25.12a2.75 2.75 0 1 1-5.5 0 2.75 2.75 0 0 1 5.5 0Z"></path></svg>
+							<p class="locationTxt">Reading, United Kingdom</p>
 						</div>
 					</div>
 				</div>
+				<div class="profilebtn">
+					<p class="profileTxt">Profiles</p>
+					<span class="material-symbols-outlined">arrow_drop_down</span>
+				</div>
+			</div>
+			<div class="headerSecond">
+				<div class="profilesBtn">
+					<p class="profTxt">Profile</p>
+				</div>
+				<div class="activityBtn">
+					<p class="activityTxt">Activity</p>
+				</div>
 			</div>
 		</div>
-</body>
+         </div>
+      </div>
+   </body>
 </html>
