@@ -1,3 +1,9 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -40,18 +46,29 @@ body {
 }
 .headerTopics{
 	display:flex;
+	align-items:center;
 	margin-left:10px;
 	color:#636B74;
 	font-size:13px;
 	font-family:-apple-system, -apple-system,  BlinkMacSystemFont, 'Segoe UI', Roboto,  
 			Oxygen, Ubuntu, Cantarell, 'Open Sans','Helvetica Neue', sans-serif;
-	margin-top:4px;
+	
 	cursor:pointer;
 	/*justify-content:space-between;
 	align-items:center;*/
 }
-
-.topicsFirst{
+.topics{
+	display:flex;
+	align-items:center;
+	padding:5px 10px;
+	justify-content:flex-start;
+	/*margin:0px 10px;*/
+	border-radius:21px;
+}
+.topics:hover{
+	background-color:hsl(210,8%,90%);
+}
+/*.topicsFirst{
 	padding-top:3px;
 	padding-right:14px;
 	padding-left:11px;
@@ -78,7 +95,7 @@ body {
 .topicsThird:hover{
 	background-color:hsl(210,8%,90%);
 	border-radius:50px;
-}
+}*/
 .searchBox{
 	display:flex;
 	width:700px;
@@ -164,6 +181,7 @@ body {
 	border-right:2px solid #ddd;
 	height:600px;
 	width:190px;
+	border-bottom:2px solid #ddd;
 }
 .headerLeft{
 	display:flex;
@@ -173,9 +191,10 @@ body {
 .headerLeftFirst{
 	display:flex;
 	flex-direction:column;
-	margin-top:5px;
+	margin-top:21px;
 	margin-left:39px;
 	font-size:13px;
+	gap:14px;
 }
 .homeSection{
 	display:flex;
@@ -239,7 +258,8 @@ body {
 	flex-direction:column;
 	margin-left:35px;
 	font-size:13px;
-	margin-top:17px;
+	margin-top:28px;
+	gap:11px;
 	
 }
 .usersSection{
@@ -284,7 +304,8 @@ body {
 	flex-direction:column;
 	margin-left:35px;
 	font-size:13px;
-	margin-top:10px;
+	margin-top:25px;
+	gap:17px;
 }
 .labsSection{
 	display:flex;
@@ -327,7 +348,8 @@ body {
 	flex-direction:column;
 	margin-left:35px;
 	font-size:13px;
-	margin-top:10px;
+	margin-top:27px;
+	gap:15px;
 }
 .collectivesSection{
 	display:flex;
@@ -370,7 +392,7 @@ body {
 	flex-direction:column;
 	margin-left:35px;
 	font-size:13px;
-	margin-top:10px;
+	margin-top:20px;
 }
 .teamsTxt{
 	font-weight:500;
@@ -391,7 +413,7 @@ body {
 	font-size:34px;
 	margin-left:5px;
 	width:200px;
-	height:76px;
+	margin-top:22px;
 }
 .userDetails{
 	display:flex;
@@ -401,6 +423,7 @@ body {
 	display:flex;
 	font-size:13px;
 	color:hsl(210,8%,42%);
+	margin-top:13px;
 }
 .userDate svg{
 	fill:hsl(210,8%,42%);
@@ -427,7 +450,7 @@ body {
 	font-size:13px;
 	gap:12px;
 	color:hsl(210,8%,42%);
-	height:15px;
+	height:45px;
 }
 .userIcons{
 	display:flex;
@@ -474,7 +497,7 @@ body {
 .headerSecond{
 	display:flex;
 	font-size:13px;
-	gap:19px;
+	gap:5px;
 }
 .profilesBtn{
 	display:flex;
@@ -494,19 +517,236 @@ body {
 	background-color:hsl(27,87%,41%);
 }
 .activityBtn{
+	display:flex;
+	justify-content:center;
 	align-items:center;
 	font-size:13px;
-	
-	/*height:21px;*/
+	padding:5px 10px;
+	height:21px;
+	border-radius:21px;
+	margin-top:10px;
 	cursor:pointer;
-	padding-left:13px;
-	
-	padding-right:12px;
 }
 .activityBtn:hover{
-	border-radius:21px;
 	background-color:hsl(0,0%,84%);
 }
-	
 
+.secondmainSection{
+	display:flex;
 	
+}
+.secondmainLeftPart{
+	margin-left:21px;
+	margin-top:15px;
+	display:flex;
+	flex-direction:column;
+	width:250px;
+}
+
+.statsInside{
+	border:1px solid #ddd;
+	border-radius:10px;
+	padding:10px;
+	margin-top:12px;
+	height:166px;
+}
+.statsPart h3{
+	font-size:21px;
+	color:#0c0d0e;
+	font-weight:400;
+}
+.statsInsideFirst{
+	display:flex;
+	/*justify-content:space-between;*/
+	gap:50px;
+	margin-right:21px;
+}
+.statsInsideSecondPart{	
+	margin-right:10px;
+}
+.statsInsideSecond{
+	display:flex;
+	margin-top:18px;
+	gap:67px;
+}
+.statsInsideThird{
+	display:flex;
+	flex-direction:column;
+	margin-left:6px;
+	margin-top:20px;
+}
+.number{
+	font-size:17px;
+	color:#0C0D0E;
+}
+.text{
+	font-size:13px;
+	color:#636B74;
+}
+.statsInsideThirdFirst svg{
+	font-size:13px;
+	fill:#3B4045;
+}
+.statsInsideThirdSecond p{
+	font-size:13px;
+	color:#636B74;
+}
+.statsInsideThirdSecond b{
+	color:#636B74;
+}
+.collectivesPart{
+	margin-top:15px;
+}
+.collectivesPart h3{
+	font-size:21px;
+	color:#0c0d0e;
+	font-weight:400;
+}
+.collectivesPartInside{
+	border:1px solid #ddd;
+	border-radius:10px;
+	padding:10px;
+	margin-top:12px;
+	height:52px;
+	font-size:13px;
+}
+.collectivesImg{
+	display:flex;
+	margin-left:1px;
+}
+.cloudTxt{
+	margin-left:16px;
+}
+.cloudDate{
+	margin-top:5px;
+}
+.communitiesPart{
+	display:flex;
+	margin-top:20px;
+}
+.communitiesPart h3{
+	font-size:21px;
+	color:#0c0d0e;
+	font-weight:400;
+}
+.viewPart{
+	display:flex;
+	align-items:center;
+	font-size:13px;
+	margin-left:41px
+}
+.viewPart svg{
+	margin-left:3px;
+}
+.communitiesPartInside{
+	display:flex;
+	flex-direction:column;
+	border:1px solid #ddd;
+	border-radius:10px;
+	padding:10px;
+	margin-top:12px;
+	height:136px;
+	font-size:13px;
+}
+.firstPart{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding:3px;
+}
+.txtFi{
+	margin-right:85px;
+	color:#1B75D0;
+}
+.txtSe{
+	margin-right:48px;
+	color:#1B75D0;
+}
+.txtTh{
+	margin-right:109px;
+	color:#1B75D0;
+}
+.txtFo{
+	margin-right:107px;
+	color:#1B75D0;
+}
+.txtFif{
+	margin-right:54px;
+	color:#1B75D0;
+}
+.num{
+	color:#636B74;
+}
+.contents{
+	display:flex;
+	flex-direction:column;
+}
+.aboutTitle{
+	display:flex;
+	flex-direction:column;
+	margin-top:17px;
+	margin-left:25px;
+}
+.aboutTitle h3{
+	font-size: 21px;
+    	color: #0c0d0e;
+    	font-weight: 400;
+}
+.authorTxt{
+	margin-top:10px;
+}
+.authorTxt a{
+	color:#1B75D0;
+}
+.authorDetails{
+	width:540px;
+	margin-top:18px;
+}
+.sites{
+	padding-top:20px;
+}
+.listContents{
+	margin-left:29px;
+	margin-top:16px;
+	color:#3B4045;
+}
+.listContents a{
+	color:#1B75D0;
+}
+	
+.listSetSecond {
+	padding-top:8px;
+	
+	
+}
+.listSetThird{
+	padding-top:8px;
+	
+}
+.listSetFourth{
+	padding-top:8px;
+	
+}
+.listSetFifth{
+	padding-top:8px;
+	
+}
+.readBtn{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	margin-left:345px;
+	margin-top:34px;
+	border:1px solid #ddd;
+	height:18px;
+	padding-left:7px;
+	border-radius:5px;
+	padding-bottom:5px;
+	padding-top:3px;
+	cursor:pointer;
+	width:58px;
+}
+.readTxt{
+	font-size: 11px;
+    	color: #3b4045;
+}

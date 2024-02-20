@@ -12,9 +12,15 @@
                <img class="logo" src="./Assets/logoo.png" alt="logo">
             </div>
             <div class="headerTopics">
-               <p class="topicsFirst">About</p>
-               <p class="topicsSecond">Products</p>
-               <p class="topicsThird">For Teams</p>
+               <div class="topics">
+                  <p>About</p>
+               </div>
+               <div class="topics">
+                  <p>Products</p>
+               </div>
+               <div class="topics">
+                  <p>For Teams</p>
+               </div>
             </div>
             <div class="searchBox">
                <form class="userBox">
@@ -105,59 +111,180 @@
                   </div>
                </div>
             </div>
-		<!--User Body-->
-		<div class="headermainSection">
-			<div class="userInformation">
-				<div class="userImage">
-					<img class="userImg" src="./Assets/userImg.png" alt="image">
-				</div>
-				<div class="userDetails">
-					<div class="userName">
-						<p>Jon Skeet</p>
+            <!--User Body-->
+            <div class="headermainSection">
+               <div class="userInformation">
+                  <div class="userImage">
+                     <img class="userImg" src="./Assets/userImg.png" alt="image">
+                  </div>
+                  <div class="userDetails">
+                     <div class="userName">
+                        <p>Jon Skeet</p>
+                     </div>
+                     <div class="userDate">
+                        <div class="userYear">
+                           <svg aria-hidden="true" class="svg-icon iconCake" width="18" height="18" viewBox="0 0 18 18">
+                              <path d="M9 4.5a1.5 1.5 0 0 0 1.28-2.27L9 0 7.72 2.23c-.14.22-.22.48-.22.77 0 .83.68 1.5 1.5 1.5Zm3.45 7.5-.8-.81-.81.8c-.98.98-2.69.98-3.67 0l-.8-.8-.82.8c-.49.49-1.14.76-1.83.76-.55 0-1.3-.17-1.72-.46V15c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2v-2.7c-.42.28-1.17.45-1.72.45-.69 0-1.34-.27-1.83-.76Zm1.3-5H10V5H8v2H4.25C3 7 2 8 2 9.25v.9c0 .81.91 1.47 1.72 1.47.39 0 .77-.14 1.03-.42l1.61-1.6 1.6 1.6a1.5 1.5 0 0 0 2.08 0l1.6-1.6 1.6 1.6c.28.28.64.43 1.03.43.81 0 1.73-.67 1.73-1.48v-.9C16 8.01 15 7 13.75 7Z"></path>
+                           </svg>
+                           <p class="memberDetails">Member for 15 years, 5 months</p>
+                        </div>
+                        <div class="lastSeen">
+                           <svg aria-hidden="true" class="svg-icon iconClock" width="18" height="18" viewBox="0 0 18 18">
+                              <path d="M9 17c-4.36 0-8-3.64-8-8 0-4.36 3.64-8 8-8 4.36 0 8 3.64 8 8 0 4.36-3.64 8-8 8Zm0-2c3.27 0 6-2.73 6-6s-2.73-6-6-6-6 2.73-6 6 2.73 6 6 6ZM8 5h1.01L9 9.36l3.22 2.1-.6.93L8 10V5Z"></path>
+                           </svg>
+                           <p class="seenDetails">Last seen this week</p>
+                        </div>
+                     </div>
+                     <div class="icons">
+                        <div class="userIcons">
+                           <div class="twitter">
+                              <svg aria-hidden="true" class="fc-black-350 svg-icon iconTwitter" width="18" height="18" viewBox="0 0 18 18">
+                                 <path fill="hsl(210,8%,42%)" d="M17 4.04c-.59.26-1.22.44-1.88.52a3.3 3.3 0 0 0 1.44-1.82c-.64.37-1.34.64-2.09.79a3.28 3.28 0 0 0-5.6 2.99A9.3 9.3 0 0 1 2.12 3.1a3.28 3.28 0 0 0 1.02 4.38 3.28 3.28 0 0 1-1.49-.4v.03a3.29 3.29 0 0 0 2.64 3.22 3.34 3.34 0 0 1-1.48.06 3.29 3.29 0 0 0 3.07 2.28 6.58 6.58 0 0 1-4.85 1.36 9.33 9.33 0 0 0 5.04 1.47c6.04 0 9.34-5 9.34-9.33v-.42a6.63 6.63 0 0 0 1.63-1.7L17 4.04Z"></path>
+                              </svg>
+                           </div>
+                           <div class="github">
+                              <svg aria-hidden="true" class="fc-black-350 svg-icon iconGitHub" width="18" height="18" viewBox="0 0 18 18">
+                                 <path fill="hsl(210,8%,42%)" d="M9 1a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 9 1Z"></path>
+                              </svg>
+                           </div>
+                           <svg aria-hidden="true" class="svg-icon iconLink" width="18" height="18" viewBox="0 0 18 18">
+                              <path d="M7.22 11.83a6 6 0 0 0 1.62.85l.61-1.8a4.1 4.1 0 1 1 4.04-.8l1.26 1.42a6 6 0 1 0-7.53.33Zm3.43-5.6a6 6 0 0 0-1.6-.87L8.4 7.15a4.1 4.1 0 1 1-4.05.73L3.12 6.43a6 6 0 1 0 7.53-.2Z"></path>
+                           </svg>
+                           <p class="csharpTxt">csharpindepth.com</p>
+                        </div>
+                        <div class="location">
+                           <svg aria-hidden="true" class="mrn2 svg-icon iconLocation" width="17" height="18" viewBox="0 0 17 18">
+                              <path d="M2 6.38C2 9.91 8.1 17.7 8.1 17.7c.22.29.58.29.8 0 0 0 6.1-7.8 6.1-11.32A6.44 6.44 0 0 0 8.5 0 6.44 6.44 0 0 0 2 6.38Zm9.25.12a2.75 2.75 0 1 1-5.5 0 2.75 2.75 0 0 1 5.5 0Z"></path>
+                           </svg>
+                           <p class="locationTxt">Reading, United Kingdom</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="profilebtn">
+                     <p class="profileTxt">Profiles</p>
+                     <span class="material-symbols-outlined">arrow_drop_down</span>
+                  </div>
+               </div>
+               <div class="headerSecond">
+                  <div class="profilesBtn">
+                     <p class="profTxt">Profile</p>
+                  </div>
+                  <div class="activityBtn">
+                     <p class="activityTxt">Activity</p>
+                  </div>
+               </div>
+               <div class="secondmainSection">
+                  <div class="secondmainLeftPart">
+                     <div class="statsPart">
+                        <h3>Stats</h3>
+                     </div>
+                     <div class="statsInside">
+                        <div class="statsInsideFirst">
+                           <div class="statsInsideFirstPart">
+                              <p class="number">1,449,393</p>
+                              <p class="text">reputation</p>
+                           </div>
+                           <div class="statsInsideSecondPart">
+                              <p class="number">401.9m</p>
+                              <p class="text">reached</p>
+                           </div>
+                        </div>
+                        <div class="statsInsideSecond">
+                           <div class="statsInsideSecondFirst">
+                              <p>35,687</p>
+                              <p class="text">answers</p>
+                           </div>
+                           <div class="statsInsideSecondSecond">
+                              <p class="number">55</p>
+                              <p class="text">questions</p>
+                           </div>
+                        </div>
+                        <div class="statsInsideThird">
+                           <div class="statsInsideThirdFirst">
+                              <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18" viewBox="0 0 18 18">
+                                 <path d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5 3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5 5-3V9c1.6-.2 3-1.4 3-3V2h-3ZM3 7c-.5 0-1-.5-1-1V4h1v3Zm8.4 2.5L9 8 6.6 9.4l1-2.7L5 5h3l1-2.7L10 5h2.8l-2.3 1.8 1 2.7h-.1ZM16 6c0 .5-.5 1-1 1V4h1v2Z"></path>
+                              </svg>
+                           </div>
+                           <div class="statsInsideThirdSecond">
+                              <p>top <b>0.01%</b> overall</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="collectivesPart">
+                        <h3>Collectives</h3>
+                     </div>
+                     <div class="collectivesPartInside">
+                        <div class="collectivesImg">
+                           <img class="cloud" src="./Assets/cloudImg.png">
+                           <div class="cloudTxt">
+                              <p class="cloudTxtFt">Google Cloud</p>
+                              <p class="cloudDate">2021 . Member</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="communitiesPart">
+                        <h3>Communities</h3>
+                        <div class="viewPart">
+                           <p class="viewTxt">View all</p>
+                           <svg aria-hidden="true" class="svg-icon iconShareSm" width="14" height="14" viewBox="0 0 14 14">
+                              <path d="M5 1H3a2 2 0 0 0-2 2v8c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V9h-2v2H3V3h2V1Zm2 0h6v6h-2V4.5L6.5 9 5 7.5 9.5 3H7V1Z"></path>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="communitiesPartInside">
+                        <div class="firstPart">
+                           <img class="logos" src="./Assets/stack.png">
+                           <p class="txtFi">Stack Overflow</p>
+                           <p class="num">1.4m</p>
+                        </div>
+                        <div class="firstPart">
+                           <img class="logos" src="./Assets/meta.png">
+                           <p class="txtSe">MetaStack Exchange</p>
+                           <p class="num">93.7k</p>
+                        </div>
+                        <div class="firstPart">
+                           <img class="logos" src="./Assets/super.png">
+                           <p class="txtTh">Super User</p>
+                           <p class="num">5.1k</p>
+                        </div>
+                        <div class="firstPart">
+                           <img class="logos" src="./Assets/server.png">
+                           <p class="txtFo">Server Fault</p>
+                           <p class="num">4.9k</p>
+                        </div>
+                        <div class="firstPart">
+                           <img class="logos" src="./Assets/software.png">
+                           <p class="txtFif">Software Engineering</p>
+                           <p class="num">3.4k</p>
+                        </div>
+                     </div>
+                  </div>
+			<div class="SecondmainRightPart">
+				<div class="contents">
+					<div class="aboutTitle">
+						<h3>About</h3>
+						<p class="authorTxt">Author of <a href="#">C# in Depth</a></p>
+						<p class="authorDetails">Currently a software engineer at Google, working remotely but near London.
+Usually a Microsoft MVP (C#, 2003-2010, 2011-)</p>
+						<p class="sites">Sites / social:</p>
+						<div class="listContents">
+							<ul>
+								<li class="listSetFirst">Mastodon: <a href="#">@jonskeet@hachyderm.io</a></li>
+								<li class="listSetSecond"><a href="#">C# in Depth</a></li>
+								<li class="listSetThird"><a href="#">Coding blog</a></li>
+								<li class="listSetFourth"><a href="#">C# articles</a></li>
+								<li class="listSetFifth">Twitter <a href="#">@jonskeet</a></li>
+							</ul> 
+						</div>
 					</div>
-					<div class="userDate">
-						<div class="userYear">
-							<svg aria-hidden="true" class="svg-icon iconCake" width="18" height="18" viewBox="0 0 18 18"><path d="M9 4.5a1.5 1.5 0 0 0 1.28-2.27L9 0 7.72 2.23c-.14.22-.22.48-.22.77 0 .83.68 1.5 1.5 1.5Zm3.45 7.5-.8-.81-.81.8c-.98.98-2.69.98-3.67 0l-.8-.8-.82.8c-.49.49-1.14.76-1.83.76-.55 0-1.3-.17-1.72-.46V15c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2v-2.7c-.42.28-1.17.45-1.72.45-.69 0-1.34-.27-1.83-.76Zm1.3-5H10V5H8v2H4.25C3 7 2 8 2 9.25v.9c0 .81.91 1.47 1.72 1.47.39 0 .77-.14 1.03-.42l1.61-1.6 1.6 1.6a1.5 1.5 0 0 0 2.08 0l1.6-1.6 1.6 1.6c.28.28.64.43 1.03.43.81 0 1.73-.67 1.73-1.48v-.9C16 8.01 15 7 13.75 7Z"></path></svg>
-							<p class="memberDetails">Member for 15 years, 5 months</p>
-						</div>
-						<div class="lastSeen">
-							<svg aria-hidden="true" class="svg-icon iconClock" width="18" height="18" viewBox="0 0 18 18"><path d="M9 17c-4.36 0-8-3.64-8-8 0-4.36 3.64-8 8-8 4.36 0 8 3.64 8 8 0 4.36-3.64 8-8 8Zm0-2c3.27 0 6-2.73 6-6s-2.73-6-6-6-6 2.73-6 6 2.73 6 6 6ZM8 5h1.01L9 9.36l3.22 2.1-.6.93L8 10V5Z"></path></svg>
-							<p class="seenDetails">Last seen this week</p>
-						</div>
-					</div>
-					<div class="icons">
-						<div class="userIcons">
-							<div class="twitter">
-							<svg aria-hidden="true" class="fc-black-350 svg-icon iconTwitter" width="18" height="18" viewBox="0 0 18 18"><path fill="#2AA3EF" d="M17 4.04c-.59.26-1.22.44-1.88.52a3.3 3.3 0 0 0 1.44-1.82c-.64.37-1.34.64-2.09.79a3.28 3.28 0 0 0-5.6 2.99A9.3 9.3 0 0 1 2.12 3.1a3.28 3.28 0 0 0 1.02 4.38 3.28 3.28 0 0 1-1.49-.4v.03a3.29 3.29 0 0 0 2.64 3.22 3.34 3.34 0 0 1-1.48.06 3.29 3.29 0 0 0 3.07 2.28 6.58 6.58 0 0 1-4.85 1.36 9.33 9.33 0 0 0 5.04 1.47c6.04 0 9.34-5 9.34-9.33v-.42a6.63 6.63 0 0 0 1.63-1.7L17 4.04Z"></path></svg>
-							</div>
-							<div class="github">
-							<svg aria-hidden="true" class="fc-black-350 svg-icon iconGitHub" width="18" height="18" viewBox="0 0 18 18"><path fill="#010101" d="M9 1a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 9 1Z"></path></svg>
-							</div>
-							
-							<svg aria-hidden="true" class="svg-icon iconLink" width="18" height="18" viewBox="0 0 18 18"><path d="M7.22 11.83a6 6 0 0 0 1.62.85l.61-1.8a4.1 4.1 0 1 1 4.04-.8l1.26 1.42a6 6 0 1 0-7.53.33Zm3.43-5.6a6 6 0 0 0-1.6-.87L8.4 7.15a4.1 4.1 0 1 1-4.05.73L3.12 6.43a6 6 0 1 0 7.53-.2Z"></path></svg>
-							<p class="csharpTxt">csharpindepth.com</p> 
-							
-						</div>
-						<div class="location">
-							<svg aria-hidden="true" class="mrn2 svg-icon iconLocation" width="17" height="18" viewBox="0 0 17 18"><path d="M2 6.38C2 9.91 8.1 17.7 8.1 17.7c.22.29.58.29.8 0 0 0 6.1-7.8 6.1-11.32A6.44 6.44 0 0 0 8.5 0 6.44 6.44 0 0 0 2 6.38Zm9.25.12a2.75 2.75 0 1 1-5.5 0 2.75 2.75 0 0 1 5.5 0Z"></path></svg>
-							<p class="locationTxt">Reading, United Kingdom</p>
-						</div>
-					</div>
+					
 				</div>
-				<div class="profilebtn">
-					<p class="profileTxt">Profiles</p>
-					<span class="material-symbols-outlined">arrow_drop_down</span>
-				</div>
+				<div class="readBtn">
+					<p class="readTxt">Read more</p>
+                  		</div>
 			</div>
-			<div class="headerSecond">
-				<div class="profilesBtn">
-					<p class="profTxt">Profile</p>
-				</div>
-				<div class="activityBtn">
-					<p class="activityTxt">Activity</p>
-				</div>
-			</div>
-		</div>
+               </div>
+            </div>
          </div>
       </div>
    </body>
